@@ -6,7 +6,7 @@ const Navbar = () => {
     console.log(show);
 
     const paddingFunc=()=>{
-        if(window.pageYOffset > 400){
+        if(window.pageYOffset > 450){
             setShow(true)
         }else{
             setShow(false)
@@ -20,7 +20,7 @@ const Navbar = () => {
     },[show])
 
     return (
-        <nav className= {`flex  sticky top-0 z-10 justify-between item-center py-4 px-12 bg-blue-900 text-white`} >
+        <nav className= {`flex sticky top-0 left-0 right-0 z-10 justify-between item-center ${show ?'py-1' :'py-6'} transition-all duration-150 px-12 bg-blue-900 text-white`} >
             <h2>yoyo</h2>
 
             <ul className='flex items-center gap-x-12'>

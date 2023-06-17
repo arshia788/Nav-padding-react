@@ -5,7 +5,7 @@ import Content from './components/Content';
 
 const App = () => {
   return (
-    <div className='py-2'>
+    <div className='py-1'>
       <Navbar />
       <Content />
     </div>
